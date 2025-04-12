@@ -1,0 +1,76 @@
+       *** 19. Social Authentication *** 
+
+
+(1) Setting up social login options (Google, Facebook, GitHub) in 
+    Django using OAuth2. 
+ 1.OAuth2 Overview
+ - OAuth2 is an authorization framework that allows third-party
+   applications to obtain limited access to user accounts on an 
+   HTTPservice, such as Google, Facebook, or GitHub. It works by 
+   delegating user authentication to the service that hosts the 
+   user account.
+
+ 2.Purpose of Social Login
+ - Social login allows users to authenticate using their 
+   existingcredentials from services like Google, Facebook, or 
+   GitHub, avoiding the need to create new usernames and passwords.
+
+ 3.Key Components in Django Social Login
+ - OAuth2 Provider
+
+ - Services like Google, Facebook, GitHub.
+
+ - They authenticate the user and issue access tokens.
+
+ - Django Application
+
+ - Acts as the OAuth2 client.
+
+ - Redirects users to the provider and handles callback responses.
+
+ - Client Credentials
+
+ - Every OAuth2 client must register with the provider to get a Client 
+   ID and Client Secret.
+
+ - Redirect URI
+
+ - A predefined URL in the Django app where the provider sends the 
+   user after successful authentication.
+
+ 4.OAuth2 Authentication Flow (Theoretical)
+ - User selects "Login with Google/Facebook/GitHub" in the Django app.
+
+ - The Django app redirects the user to the provider's login/consent page.
+
+ - The user logs in and grants permission to share their profile.
+
+ - The provider redirects back to the Django app with an 
+   authorization code.
+
+ - Django app exchanges the code for an access token.
+
+ - Django uses the token to fetch user information (name, email, etc.).
+
+ - The user is authenticated and either logged in or a new Django user 
+   is created.
+
+ 5.Tools Commonly Used
+ - django-allauth
+
+ - A high-level Django package that simplifies the integration of 
+   multiple social providers using OAuth2.
+
+ -social-auth-app-django
+
+ -A flexible and extensible authentication system using Python Social Auth.
+
+ 6.Security Considerations
+ - Use HTTPS for secure communication.
+
+ - Keep client secrets confidential.
+
+ - Always validate the state parameter to prevent CSRF attacks.
+
+ - Handle token expiry and error responses gracefully.
+

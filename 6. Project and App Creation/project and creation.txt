@@ -1,0 +1,34 @@
+    *** 6. Project and App Creation *** 
+
+(1) Steps to create a Django project and individual apps within the project. 
+
+ - Install Django – Set up Django in the environment.
+
+ - Create a Project – Initialize a new Django project.
+
+ - Navigate to the Project Directory – Move inside the project folder.
+
+ - Create an App – Generate a modular app within the project.
+
+ - Register the App – Add the app to Django’s settings.
+
+ - Configure Database – Define models and apply migrations.
+
+ - Create Views and URLs – Set up views and link them to URLs.
+
+ - Run the Server – Start the Django development server.
+
+
+(2) Understanding the role of manage.py, urls.py, and views.py. 
+
+ - manage.py – A command-line utility for interacting with the 
+   Django project. It is used to run the server, apply migrations, 
+   create apps, and perform other administrative tasks.
+
+ - urls.py – Handles URL routing in Django. It maps incoming requests 
+   to specific views, defining how different URLs are processed within 
+   the project or an app.
+
+ - views.py – Contains the logic for handling requests and 
+   returning responses. Views process data, interact with models, 
+   and render templates or return JSON responses in case of APIs.

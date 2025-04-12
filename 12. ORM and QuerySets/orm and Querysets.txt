@@ -1,0 +1,38 @@
+    *** 12. ORM and QuerySets  *** 
+
+(1) Understanding Django’s ORM and how QuerySets are used to interact 
+    with the database.
+ - Django’s Object-Relational Mapping (ORM) allows interaction 
+   with databases using Python instead of raw SQL. It provides 
+   an abstraction layer that makes database operations easier and 
+   more efficient.
+
+ 1. What is a QuerySet?
+ - A QuerySet is a collection of queries that retrieve, filter, update, 
+  or  delete records from the database using Django ORM. QuerySets are 
+  lazy, meaning they are evaluated only when needed.
+
+ 2. Key QuerySet Operations
+ - Retrieving Data – Fetch records using filtering and ordering methods.
+
+ - Creating Data – Insert new records into the database.
+
+ - Updating Data – Modify existing records efficiently.
+
+ - Deleting Data – Remove records from the database.
+
+ 3. QuerySet Optimization
+ - Uses lazy evaluation to optimize query execution.
+
+ - Supports chaining operations for efficient querying.
+
+ - Provides query optimization techniques like select_related() 
+   and prefetch_related().
+
+ 4.Benefits of Django ORM and QuerySets
+ - Database Independence – Works with multiple databases like 
+   SQLite, MySQL, and PostgreSQL.
+
+ - Security – Prevents SQL injection.
+
+ - Efficiency – Simplifies complex database operations.

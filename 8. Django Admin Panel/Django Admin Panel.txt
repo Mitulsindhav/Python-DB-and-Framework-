@@ -1,0 +1,48 @@
+    *** 8. Django Admin Panel ***
+
+(1) Introduction to Django’s built-in admin panel.
+ -  Django’s admin panel is an automatically generated web interface 
+    for managing application data. It provides a user-friendly way 
+    to perform CRUD (Create, Read, Update, Delete) operations on 
+    database models.
+
+ -=> Key Features:
+   - Pre-built interface for managing models.
+
+   - Authentication and role-based access control.
+
+   - Customization options for displaying and filtering data.
+
+ -=> Usage:
+   - Developers can create an admin user and register models to make 
+     them -manageable through the panel.
+
+   - Accessible via a web browser after running the Django 
+     development server.
+
+(2) Customizing the Django admin interface to manage database records. 
+
+ - Customization Options:
+ - Registering Models – Allows models to be managed via the admin panel.
+
+ - Customizing Model Display – Modify list views using list_display to 
+   show specific fields.
+
+ - Filtering and Searching – Enable filters (list_filter) and search 
+   fields (search_fields).
+
+ - Editable Fields – Allow direct inline editing using list_editable.
+
+ - Custom Forms – Use custom forms to control how data is entered.
+
+ - Inline Models – Manage related models within the same admin view.
+
+ - Overriding Admin Templates – Modify default templates to change the UI.
+
+-=> Purpose:
+  - Enhances usability for administrators.
+
+  - Streamlines data management with better organization.
+
+  - Provides greater control over displayed content.
+

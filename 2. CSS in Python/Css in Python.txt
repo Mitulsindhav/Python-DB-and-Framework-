@@ -1,0 +1,73 @@
+
+*** 2. CSS in Python ***
+
+(1)Integrating CSS with Django templates.
+-> Django allows seamless integration of CSS (Cascading 
+   Style Sheets) 
+   into templates to enhance the visual appearance of web pages.
+   This is done using Django's static file management system.
+
+ 1.Django Static Files for CSS
+ - Django provides a built-in way to handle static files like 
+   CSS,  JavaScript, and images using the static/ directory.
+
+   Key Concepts:
+ - Static File Directory: CSS files are typically stored in the 
+   static/ folder within a Django app.
+
+ - Static File Loading: CSS files are included in templates using
+   {% static %}.
+
+ - Django's Staticfiles App: Manages static files efficiently.
+
+ 2. Steps to Integrate CSS with Django Templates
+  1️⃣ Organizing CSS Files
+   - CSS files should be placed inside a static/ directory 
+     within the Django app
+   
+  2️⃣ Loading CSS in Templates
+   - Django templates use {% load static %} to reference static files.
+   - The CSS file is linked using the <link> tag.
+
+  3️⃣ Configuring STATICFILES_DIRS (Optional)
+   - If static files are placed outside app directories, Django’s settings.py must 
+     define STATICFILES_DIRS to specify their location.
+
+  4️⃣ Collecting Static Files in Production
+   - python manage.py collectstatic is used to gather all static files into a single location 
+     for deployment.
+
+(2)How to serve static files (like CSS, JavaScript) in Django. 
+-> Django provides a built-in system for managing static files like
+   CSS, JavaScript, and images. Static files enhance the visual 
+   appearance and interactivity of web applications.
+
+ 1.How Django Handles Static Files
+ - Django uses a static/ directory within each app to store static assets.
+ - The django.contrib.staticfiles app manages these files.
+ - Static files are automatically served in development mode but 
+   require additional configuration in production.
+
+ 2.Steps to Serve Static Files
+ 1️⃣ Organizing Static Files
+  - Each app should have its own static/ folder.
+  - A global static/ directory can be used for project-wide assets.
+
+ 2️⃣ Using {% static %} in Templates
+  - The {% load static %} tag loads Django’s static file system.
+  - Static files are linked using {% static 'path/to/file.css' %}.
+
+ 3️⃣ Configuring settings.py
+  - STATIC_URL defines the base URL for static files.
+  - STATICFILES_DIRS specifies additional directories.
+  - STATIC_ROOT is used for collecting static files in production.
+
+ 4️⃣ Collecting Static Files
+  - The collectstatic command gathers all static files into a single location
+   for deployment.
+ 
+ 5️⃣ Serving Static Files in Production
+  - Django does not serve static files in production by default.
+  - A web server (NGINX, Apache) or CDN (AWS S3, Cloudflare) is used for 
+  efficient delivery.
+

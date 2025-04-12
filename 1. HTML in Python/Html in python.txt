@@ -1,0 +1,74 @@
+
+*** 1. HTML in Python ***
+
+(1) Introduction to embedding HTML within Python using 
+    web frameworks like Django or Flask. 
+-> Embedding HTML within Python is a fundamental concept
+   when working with web frameworks like Django and Flask.
+   These frameworks allow you to dynamically generate web 
+   pages by integrating Python logic with HTML templates.
+
+ 1.Introduction to Web Frameworks
+   Django and Flask are two popular Python web frameworks:
+
+   Django: A full-featured web framework that follows the
+   MTV (Model-Template-View) pattern.
+
+   Flask: A lightweight and flexible micro-framework, 
+   using Jinja2 as its templating engine.
+  
+ 2.Using HTML in Django
+   In Django, HTML is embedded using templates stored in 
+   a templates/ directory.
+ -> Flask also uses templates, typically stored in a 
+    templates/ folder.
+
+(2) Generating dynamic HTML content using Django templates.
+-> Django templates are used to dynamically generate
+   HTML content by embedding Python-like logic within an HTML file. 
+   This allows developers to separate the presentation
+   layer from business logic, making the code cleaner and 
+   more maintainable.
+  
+ 1.Django Template Language (DTL)
+   Django uses a built-in templating engine called Django 
+   Template Language (DTL). It provides a structured way to 
+   display dynamic content using variables, filters, and 
+   control structures.
+  
+ 2. Key Features of Django Templates
+  1️⃣ Variables
+   - Django templates allow inserting dynamic data using 
+     double curly braces  ({{ variable }}).
+   - Variables are passed from views and can be
+     displayed directly in templates.
+
+  2️⃣ Filters
+   - Filters modify how data is displayed.
+   - Example filters include:
+     {{ price|floatformat:2 }} → Formats a number to two decimal places.
+  {{ name|upper }} → Converts a string to uppercase.
+
+  3️⃣ Control Structures
+   - Django templates support loops and conditional statements for dynamic rendering.
+   - Loops (for loop)
+     Used to iterate over lists and display multiple items dynamically.
+
+   - Conditions (if statement)
+   - Allows rendering different content based on conditions.
+
+  4️⃣ Template Inheritance
+   - Enables reusability by creating a base template with a common structure.
+   - Child templates extend the base template and override specific sections.
+ 
+  5️⃣ Static Files
+   - Templates can include static assets like CSS, JavaScript, and images using
+   {% static %}.
+
+   - This improves the appearance and interactivity of dynamically generated pages.
+
+  6️⃣ Template Tags
+   - Used for dynamic functionalities such as including other templates, looping, and 
+     URL mapping.
+   - Example: {% url 'home' %} dynamically generates links.
+

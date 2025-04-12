@@ -1,0 +1,28 @@
+     *** 14. CRUD Operations using AJAX ***
+
+(1) Using AJAX for making asynchronous requests to the server 
+    without reloading the page.
+
+  1.How AJAX Works in Django
+  - User triggers an event (e.g., clicking a button, submitting a form).
+
+ - JavaScript (or jQuery) sends an AJAX request to the Django server.
+
+ - Django processes the request in a view and returns a response 
+   (JSON, HTML, etc.).
+
+ - JavaScript updates the page dynamically without requiring a full reload.
+
+ 2.Key Use Cases of AJAX in Django
+ - Form submission without reloading (e.g., login, registration).
+
+ - Dynamic content loading (e.g., search suggestions, comments).
+
+ - Real-time updates (e.g., notifications, chat applications).
+
+ 3.Benefits of Using AJAX
+ - Improves performance by reducing unnecessary page reloads.
+
+ - Enhances user experience with seamless interactions.
+
+ - Reduces server load by requesting only required data.

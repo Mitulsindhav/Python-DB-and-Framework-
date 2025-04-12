@@ -1,0 +1,28 @@
+   *** 10. Form Validation using JavaScript ***
+
+(1) Using JavaScript for front-end form validation.
+ - Form validation ensures that user inputs meet specified criteria 
+   before submission. JavaScript provides client-side validation to 
+   improve user experience and reduce server load.
+
+-=> Types of Form Validation:
+  - Required Field Validation – Ensures fields are not left empty.
+
+  - Pattern Validation – Uses regular expressions (regex) to 
+    validate formats (e.g., email, phone number).
+
+  - Length Validation – Checks if input meets minimum and maximum 
+    length requirements.
+
+  - Numeric Validation – Ensures numeric values fall within a valid range.
+
+ - Real-time Validation – Provides instant feedback as users type.
+
+-=> Purpose of JavaScript Validation:
+ 
+ - Improves user experience by detecting errors before form submission.
+
+ - Reduces server load by filtering invalid data on the client side.
+
+ - Enhances security when combined with server-side validation.
+

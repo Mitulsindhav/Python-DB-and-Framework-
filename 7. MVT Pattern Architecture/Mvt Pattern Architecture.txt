@@ -1,0 +1,31 @@
+   *** 7. MVT Pattern Architecture  ***
+
+(1) Django’s MVT (Model-View-Template) architecture and how it 
+    handles request-response cycles.
+ -  Django follows the Model-View-Template (MVT) pattern, which is 
+    a variation of the MVC architecture:
+
+ - Model – Represents the database structure and handles data logic.
+
+ - View – Contains business logic, processes user requests, and 
+   interacts with models.
+
+ - Template – Handles the presentation layer, rendering HTML 
+   content dynamically.
+
+ - Request-Response Cycle in Django
+ - User sends a request – The browser sends an HTTP request to the 
+   Django server.
+
+ - URL Routing (urls.py) – Django’s URL dispatcher maps the request to 
+   the appropriate view.
+
+ - View Processing (views.py) – The view fetches or processes data, 
+   often interacting with the model.
+
+ - Template Rendering (templates/) – If needed, the view renders an 
+   HTML template with dynamic data.
+
+ - Response Sent to User – The processed response (HTML, JSON, etc.) 
+   is returned to the browser.
+

@@ -1,0 +1,95 @@
+    *** 20. Google Maps API ***
+
+(1)Integrating Google Maps API into Django projects.
+ 1.What is the Google Maps API?
+ - The Google Maps API is a set of services provided by Google that 
+   allow developers to integrate location-based features like:
+
+ - Interactive maps
+
+ - Geocoding (converting addresses to coordinates)
+
+ - Reverse geocoding (coordinates to address)
+
+ - Place search and autocomplete
+
+ - Directions and distance matrix
+
+ 2.Purpose of Integrating Google Maps in Django
+ - Show maps in your web app (e.g., property listings, business locations)
+
+ - Auto-fill addresses using Google’s Place Autocomplete
+
+ - Calculate distances between points
+
+ - Store and display geolocation data
+
+ 3.Components of Integration
+	1.Frontend Integration (JavaScript)
+  - Google Maps is mostly integrated through JavaScript on the 
+    frontend. You include the Google Maps JS API using a script tag 
+    and then configure the map in your HTML/JS code.
+
+  2.Backend (Django) Support
+  - Provide location data (from the database to the frontend)
+
+ - Store coordinates received from the frontend
+
+ - Optionally use the Google Maps Web Services API on the backend 
+   (e.g., geocoding using Python)
+
+ 4.Google Maps API Key
+ - To use Google Maps, you must:
+
+ - Go to Google Cloud Console
+
+ - Create a project and enable Maps JavaScript API, Geocoding API, etc.
+
+ - Generate an API key (restrict it to specific URLs for security)
+
+ 5.Common Use Cases
+   1.Displaying a Map
+   - Include Google Maps JavaScript API in your HTML
+
+   - Use a div element as the map container
+
+   - Initialize the map using coordinates
+
+   2.Geocoding & Reverse Geocoding
+   - Convert an address into latitude/longitude using the Geocoding API
+
+   - Use Python requests or the googlemaps Python library in Django to 
+     call the API
+
+   3.Places Autocomplete
+   - Add an input box in your form
+
+   - Use the Places API to provide live address suggestions as the 
+     user types
+
+ 6.Theoretical Integration Steps
+ - Get an API Key from Google Cloud Console.
+
+ - Enable APIs: JavaScript API, Geocoding API, Places API.
+
+ - Include the API script in your HTML template:
+   <script src="https://maps.googleapis.com/maps/api/ 
+    js?key=YOUR_API_KEY&libraries=places"></script>
+
+ - Add JavaScript to load the map or autocomplete fields.
+
+ - Use Django to:
+
+ - Serve data to JavaScript (via templates or APIs)
+
+ - Save user-submitted coordinates
+
+ - Optionally use Python to call Google’s Web APIs
+
+ 7.Security Tips
+ - Restrict API keys to your domain
+
+ - Monitor usage and set quotas
+
+ - Use environment variables to store API keys securely
+

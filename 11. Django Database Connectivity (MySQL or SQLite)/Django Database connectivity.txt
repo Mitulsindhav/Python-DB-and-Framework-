@@ -1,0 +1,58 @@
+   **** 11. Django Database Connectivity (MySQL or SQLite) *** 
+
+(1) Connecting Django to a database (SQLite or MySQL). 
+ 
+   1.Connecting to SQLite (Default Database)
+   - Django uses SQLite by default, requiring no additional setup.
+   
+   DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "db.sqlite3",
+    }
+}
+
+   2.Connecting to MySQL
+   - To use MySQL, follow these steps:
+   - pip install mysqlclient
+
+   DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'database_name',
+        'USER': 'your_username',
+        'PASSWORD': 'your_password',
+        'HOST': 'localhost',  # Or the database server IP
+        'PORT': '3306',
+    }
+}
+
+
+(2) Using the Django ORM for database queries. 
+ -  Django's Object-Relational Mapping (ORM) allows interaction with 
+    the database using Python instead of SQL.
+
+ 1.Creating Records (Insert Data)
+ - Data is added using the model’s save() method or create().
+
+ 2.Retrieving Records (Read Data)
+ - The all(), filter(), and get() methods are used to fetch data.
+
+ 3.Updating Records (Modify Data)
+ - Objects are retrieved, modified, and saved using .save() or 
+   updated using .update().
+
+ 4.Deleting Records (Remove Data)
+ - The .delete() method removes records from the database.
+
+ 5.Query Optimization
+ - Use select_related() for foreign keys and prefetch_related() for 
+   many-to-many relationships.
+
+-=> Purpose of Django ORM:
+  - Simplifies database operations without writing raw SQL.
+
+  - Ensures database independence (supports SQLite, MySQL, 
+    PostgreSQL, etc.).
+
+Provides security by preventing SQL injection.
