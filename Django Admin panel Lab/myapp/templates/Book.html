@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>  Django Admin Panel     </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>  Django Admin Panel  </h1> 
+
+        </header>    
+       
+        <h1>📚 List of Books</h1>
+        <ul>
+            {% for book in books %}
+                <li><strong>{{ book.title }}</strong> by {{ book.author }}</li>
+            {% empty %}
+                <li>No books available.</li>
+            {% endfor %}
+        </ul>
+</body>
+</html>
