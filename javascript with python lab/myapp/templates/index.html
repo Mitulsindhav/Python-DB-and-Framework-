@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS in Django</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1> JavaScript with Python Django </h1>
+    </header>
+
+    <main>
+        <p id="message">Click the button to see JavaScript in action.</p>
+        <button id="clickMeBtn">Click Me!</button>
+    </main>
+
+    <footer>
+        &copy;  Mitul Sindhav python Djano 2025 
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="{% static 'javascript/script.js' %}"></script>
+</body>
+</html>
